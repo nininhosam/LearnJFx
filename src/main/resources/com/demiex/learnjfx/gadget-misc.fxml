@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="410.0" style="-fx-background-color: #27005D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demiex.learnjfx.MiscController">
+    <children>
+      <Button fx:id="backBtn" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#toLoginWindow" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #9400FF;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="textBubble" alignment="CENTER" layoutX="90.0" layoutY="15.0" prefHeight="30.0" prefWidth="305.0" style="-fx-background-color: #AED2FF;" text=". . ." textFill="#656565">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="circleImg" fitHeight="250.0" fitWidth="250.0" layoutX="80.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/morning.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection fraction="0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="birbImg" fitHeight="200.0" fitWidth="200.0" layoutX="105.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Birb.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutY="495.0" prefHeight="0.0" prefWidth="410.0" />
+      <Button fx:id="statusBtn" layoutX="15.0" layoutY="510.0" mnemonicParsing="false" onAction="#checkStatus" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+        <Button fx:id="interactBtn" layoutX="110.0" layoutY="510.0" mnemonicParsing="false" onAction="#interact" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="Interact" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="15.0" layoutY="555.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="Change" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="110.0" layoutY="555.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="???" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="205.0" layoutY="495.0" orientation="VERTICAL" prefHeight="105.0" prefWidth="0.0" />
+      <Button fx:id="morningBackgroundBtn" layoutX="220.0" layoutY="510.0" mnemonicParsing="false" onAction="#imageToMorning" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="Morning" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="eveningBackgroundBtn" layoutX="315.0" layoutY="510.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="Evening" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="nightBackgroundBtn" layoutX="220.0" layoutY="555.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="Night" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="noneBackgroundBtn" layoutX="315.0" layoutY="555.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9400FF;" text="None" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>
